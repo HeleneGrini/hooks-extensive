@@ -9,6 +9,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     port: 3333,
+    historyApiFallback: true,
     open: true,
   },
   output: {
@@ -21,10 +22,14 @@ module.exports = {
         use: "ts-loader",
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".tsx", ".ts", ".js", ".css"],
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "./public/index.html" }),
