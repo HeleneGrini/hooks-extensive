@@ -2,15 +2,17 @@
 
 const ESLintPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const path = require("path");
 
 module.exports = {
   entry: "./src/index.tsx",
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    // contentBase: path.join(__dirname, "dist"),
     port: 3333,
     historyApiFallback: true,
     open: true,
+    compress: true,
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -29,6 +31,7 @@ module.exports = {
     ],
   },
   resolve: {
+    plugins: [new TsconfigPathsPlugin({})],
     extensions: [".tsx", ".ts", ".js", ".css"],
   },
   plugins: [

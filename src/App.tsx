@@ -5,7 +5,7 @@ import { Routes } from "./router";
 export const App = () => (
   <div className="h-100">
     <Nav />
-    <div className="container h-100">
+    <div className="container ">
       <Routes />
     </div>
   </div>
