@@ -6,9 +6,6 @@ Fagboble
 
  ```
  npm install 
- ```
- 
- ```
  npm start
  ```
  
