@@ -8,7 +8,7 @@ const path = require("path");
 module.exports = {
   entry: "./src/index.tsx",
   devServer: {
-    // contentBase: path.join(__dirname, "dist"),
+    clientLogLevel: "silent",
     port: 3333,
     historyApiFallback: true,
     open: true,
