@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2020-12-06T12:21:31.913Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36 OPR/72.0.3815.400" etag="rlqGPRQ2Wxorkz31Gdgo" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-06T12:34:02.865Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36 OPR/72.0.3815.400" etag="mTqFs1expCpxs48ispaY" version="13.10.9" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="2131" dy="3249" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" background="#114B5F" math="0" shadow="0">
+    <mxGraphModel dx="2995" dy="2843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" background="#114B5F" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="70Aoskz2j759LiOCqX9b-44" value="" style="group;fontColor=#E4FDE1;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="2320" y="260" width="520" height="1380" as="geometry" />
+          <mxGeometry x="2340" y="530" width="520" height="1380" as="geometry" />
         </mxCell>
         <mxCell id="70Aoskz2j759LiOCqX9b-40" value="" style="group;fontColor=#E4FDE1;" vertex="1" connectable="0" parent="70Aoskz2j759LiOCqX9b-44">
           <mxGeometry y="260" width="520" height="1120" as="geometry" />
@@ -53,22 +53,34 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="70Aoskz2j759LiOCqX9b-41" value="&lt;font style=&quot;font-size: 19px&quot;&gt;useState&lt;br&gt;&lt;/font&gt;&lt;br&gt;Applikasjonens minne&lt;br&gt;Immutable&lt;br&gt;Trigger rerender" style="whiteSpace=wrap;html=1;rounded=1;fontColor=#E4FDE1;strokeColor=none;fillColor=#F45B69;" vertex="1" parent="1">
-          <mxGeometry x="2320" y="120" width="200" height="120" as="geometry" />
+          <mxGeometry x="2340" y="390" width="200" height="120" as="geometry" />
         </mxCell>
         <mxCell id="70Aoskz2j759LiOCqX9b-49" value="" style="endArrow=classic;html=1;strokeColor=#028090;rounded=0;labelBackgroundColor=#114B5F;fontColor=#E4FDE1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2640" y="380" as="sourcePoint" />
-            <mxPoint x="2420" y="520" as="targetPoint" />
+            <mxPoint x="2660" y="650" as="sourcePoint" />
+            <mxPoint x="2440" y="790" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="2420" y="380" />
+              <mxPoint x="2440" y="650" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="70Aoskz2j759LiOCqX9b-51" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;font style=&quot;font-size: 25px&quot;&gt;Rules&lt;/font&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;span style=&quot;font-size: 19px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px ; border: none ; padding: 0px ; font-size: 22px&quot;&gt;&lt;span&gt;&lt;font style=&quot;font-size: 22px&quot;&gt;&lt;b&gt;Only call hooks at the top level&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px ; border: none ; padding: 0px ; font-size: 22px&quot;&gt;&lt;span&gt;&lt;font style=&quot;font-size: 17px&quot;&gt;- bevare rekkefølgen hooks blir kalt i&lt;/font&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px ; border: none ; padding: 0px ; font-size: 22px&quot;&gt;&lt;span style=&quot;font-size: 19px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px ; border: none ; padding: 0px&quot;&gt;&lt;span&gt;&lt;b&gt;&lt;font style=&quot;font-size: 21px&quot;&gt;Only Call Hooks from React Functions&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px ; border: none ; padding: 0px&quot;&gt;&lt;span&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;- useXyz&lt;/font&gt;&lt;/span&gt;&lt;/blockquote&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#028090;fillColor=#F45B69;fontColor=#E4FDE1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="910" y="1150" width="440" height="320" as="geometry" />
+          <mxGeometry x="910" y="1320" width="440" height="320" as="geometry" />
         </mxCell>
         <mxCell id="70Aoskz2j759LiOCqX9b-52" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;span style=&quot;font-size: 25px&quot;&gt;&lt;b&gt;Hooks &lt;/b&gt;er&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;i style=&quot;font-size: 25px&quot;&gt;Funksjoner&lt;/i&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;span style=&quot;font-size: 18px&quot;&gt;Statefull logikk&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;span style=&quot;font-size: 18px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px ; border: none ; padding: 0px ; font-size: 18px&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;- Gjenbruk&lt;br&gt;&lt;/font&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px ; border: none ; padding: 0px ; font-size: 18px&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;Dele (statefull)&amp;nbsp; funksjonalitet mellom funksjoner (hooks og komponenter)&lt;/font&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px ; border: none ; padding: 0px ; font-size: 18px&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;- Leselighet&lt;/font&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px ; border: none ; padding: 0px ; font-size: 18px&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;Separere markup og funk&lt;/font&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px ; border: none ; padding: 0px ; font-size: 18px&quot;&gt;Tydelig, veldefinert pattern&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px ; border: none ; padding: 0px ; font-size: 18px&quot;&gt;&lt;br&gt;&lt;/blockquote&gt;&lt;i&gt;Class-components er ut&lt;/i&gt;&lt;/blockquote&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#028090;fillColor=#F45B69;fontColor=#E4FDE1;align=left;" vertex="1" parent="1">
           <mxGeometry x="910" y="350" width="440" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="70Aoskz2j759LiOCqX9b-54" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#E4FDE1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="820" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="70Aoskz2j759LiOCqX9b-55" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#E4FDE1;" vertex="1" parent="1">
+          <mxGeometry x="4510" y="1050" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="70Aoskz2j759LiOCqX9b-57" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#E4FDE1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="2930" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="70Aoskz2j759LiOCqX9b-58" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#E4FDE1;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="20" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
