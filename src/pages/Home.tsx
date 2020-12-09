@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { User } from "../types";
+
 export const Home = () => {
   const [data, setData] = useState<User[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
