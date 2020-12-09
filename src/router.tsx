@@ -1,11 +1,11 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import { Playground } from "./pages/Playground";
+import { Playground, Home, Users, User } from "./pages";
 export const Routes = () => (
   <Switch>
-    <Route exact path="/" component={() => <div>Home</div>} />
-    <Route path="/users" component={() => <div>users</div>} />
-    <Route path="/user?:id" component={() => <div>user</div>} />
+    <Route exact path="/" component={Home} />
+    <Route path="/users" component={Users} />
+    <Route path="/user/:userId" component={User} />
     <Route path="/playground" component={Playground} />
     <Route component={() => <div>Not found</div>} />
   </Switch>
