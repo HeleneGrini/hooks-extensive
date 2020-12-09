@@ -6,6 +6,8 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "start:server": "json-server --watch db.json --port 3334",
+    "start:lazy-server": "json-server --watch db.json --port 3334 --delay 3000 ",
+    "start:error-server": "json-server --watch db.json --port 3334 --no-cors ",
     "build": "webpack"
   },
   "author": "",

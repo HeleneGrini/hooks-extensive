@@ -4,23 +4,25 @@ import * as t from "../types";
 
 export const User = () => {
   const [user, setUser] = useState<t.User | undefined>();
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<boolean>(false);
   const { userId } = useParams<{ userId: string }>();
 
   const getUser = () =>
     fetch(`http://localhost:3334/users/${userId}`)
       .then((r) => r.json())
-      .then((r) => {
-        setUser(r);
-      })
-      .catch((err) => console.log(err));
+      .then((r) => setUser(r))
+      .catch(() => setError(true))
+      .finally(() => setLoading(false));
 
   useEffect(() => {
+    setLoading(true);
     getUser();
   }, []);
 
-  if (!user) {
-    return null;
-  }
+  if (loading) return <h2>Loading.....</h2>;
+  if (error) return <h2>Error ¯\_(ツ)_/¯</h2>;
+  if (!user) return null;
 
   return (
     <div className="pt-4">
