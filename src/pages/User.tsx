@@ -1,27 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
-import * as t from "../types";
+
+/**
+ * This data is just a static object. We need to get it from out api.
+ */
+import { data } from "../data";
+
+/**
+ * Users endpoint: http://localhost:3334/users/{id}
+ *
+ * Look in package.json for scripts to start the server
+ */
 
 export const User = () => {
-  const [user, setUser] = useState<t.User | undefined>();
-  const [loading, setLoading] = useState<boolean>(false);
-  const [error, setError] = useState<boolean>(false);
   const { userId } = useParams<{ userId: string }>();
+  const user = data.find((u) => u.id === parseInt(userId));
 
-  const getUser = () =>
-    fetch(`http://localhost:3334/users/${userId}`)
-      .then((r) => r.json())
-      .then((r) => setUser(r))
-      .catch(() => setError(true))
-      .finally(() => setLoading(false));
-
-  useEffect(() => {
-    setLoading(true);
-    getUser();
-  }, []);
-
-  if (loading) return <h2>Loading.....</h2>;
-  if (error) return <h2>Error ¯\_(ツ)_/¯</h2>;
   if (!user) return null;
 
   return (
@@ -38,6 +32,11 @@ export const User = () => {
           </div>
 
           <div className="ml-auto">
+            {/**
+             * Hmm. I should be able to register this user from this page.
+             * It would also be usefult to see whether the user was registered or not
+             */}
+
             {/* if user is registerd ? <span className="badge badge-success">Registered</span> : */}
             <div
               className="card text-white bg-warning mb-3"

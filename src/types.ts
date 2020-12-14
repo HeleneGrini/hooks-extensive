@@ -1,5 +1,5 @@
 export type User = {
-  id: string;
+  id: number;
   name: string;
   username: string;
   email: string;
@@ -17,4 +17,12 @@ export type User = {
     catchPhrase: string;
     name: string;
   };
+};
+
+export type SharedProps = {
+  registerUser: (user: User) => void;
+  unregisterUser: (user: User) => void;
+  unregisteredUsers: User[];
+  registeredUsers: User[];
+  data: User[];
 };

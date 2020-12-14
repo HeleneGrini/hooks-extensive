@@ -5,14 +5,20 @@ export const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <ul className="navbar-nav mr-auto">
-        <li className="nav-item nav-link">
-          <Link to="/">Home</Link>
+        <li>
+          <Link className="nav-item nav-link" to="/">
+            Home
+          </Link>
         </li>
-        <li className="nav-item nav-link">
-          <Link to="/users">Users</Link>
+        <li>
+          <Link className="nav-item nav-link" to="/users">
+            Users
+          </Link>
         </li>
-        <li className="nav-item nav-link">
-          <Link to="/playground">Playground</Link>
+        <li>
+          <Link className="nav-item nav-link" to="/playground">
+            Playground
+          </Link>
         </li>
       </ul>
     </nav>
