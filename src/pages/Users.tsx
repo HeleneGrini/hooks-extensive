@@ -19,8 +19,16 @@ export const Users = () => {
     <div className="pt-4">
       <h1>Users</h1>
 
+      <button
+        type="button"
+        className="btn btn-primary"
+        onClick={() => history.push("/users/create")}
+      >
+        + Create new user
+      </button>
+
       <div className="pt-4">
-        {data.map((user) => (
+        {data?.map((user) => (
           <button
             className="card text-white bg-secondary mb-3 w-100 text-left"
             key={user.id}

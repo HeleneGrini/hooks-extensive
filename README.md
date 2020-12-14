@@ -44,7 +44,9 @@ Stylesheet https://bootswatch.com/slate/
 ---
 
 7. Opprette en ny bruker
-8. Opprette et nytt arrangement
-9. _Refactor_ (custom hook)
+8. _Refactor_ (custom hook)
+<!-- 8. Opprette et nytt arrangement -->
 
-Bonus (hvis vi får tid og lyst): lage en hook for å detektere breakpoint
+Bonus: lage en hook for å detektere breakpoint
+
+Bonus: lage en gjenbrukbak form hook. Bruk til opprette bruker (finne på et nytt brukstilfelle?)
